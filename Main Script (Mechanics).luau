@@ -250,12 +250,12 @@ while true do
 	-- === INTERMISSION PHASE ===
 	for i = INTERMISSION_DURATION, 1, -1 do
 		updateAllUI("Intermission: " .. i .. "s")
-		wait(1)
+		task.wait(1)
 	end
 
 	-- === TELEPORT PHASE ===
 	updateAllUI("TELEPORTING TO ARENA!")
-	wait(1)
+	task.wait(1)
 	teleportPlayers(arenaFloor.CFrame)
 
 	-- === ROUND START PHASE ===
@@ -288,7 +288,7 @@ while true do
 		if timer < 10 then spawnLava() end
 
 		-- Wait based on current difficulty
-		wait(currentSpawnRate)
+		task.wait(currentSpawnRate)
 
 		-- Decrement timer by the wait amount roughly
 		timer = timer - currentSpawnRate
@@ -301,7 +301,7 @@ while true do
 		-- Early Exit if everyone died
 		if survivors == 0 and #Players:GetPlayers() > 0 then
 			updateAllUI("EVERYONE DIED!")
-			wait(2)
+			task.wait(2)
 			break
 		end
 	end
@@ -309,7 +309,7 @@ while true do
 	-- === ROUND END PHASE ===
 	isRoundActive = false
 	updateAllUI("Round Over! Returning to Lobby...")
-	wait(2)
+	task.wait(2)
 
 	-- Send everyone back to lobby
 	teleportPlayers(lobbyFloor.CFrame)
