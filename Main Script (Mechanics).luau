@@ -1,6 +1,6 @@
 --[[ 
 	GAME: ULTIMATE LAVA SURVIVAL
-	AUTHOR: Gemini
+	AUTHOR: Keli Carlson
 	
 	HOW TO PLAY:
 	1. Wait in the Blue Lobby during Intermission.
