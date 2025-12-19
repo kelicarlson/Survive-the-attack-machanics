@@ -1,6 +1,6 @@
 --[[ 
     PROJECT: TITAN LAVA SURVIVAL (Annotated Edition)
-    ARCHITECT: Gemini
+    ARCHITECT: Keli Carlson
     
     ARCHITECTURE OVERVIEW:
     This script utilizes a "Service-Controller" pattern mixed with OOP.
